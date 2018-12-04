@@ -14,9 +14,25 @@ function init() {
   var plus = document.getElementById("plus");
   var equals = document.getElementById("equals");
   
+  var screen = document.getElementById("screen");
+  
   var product;
+  var numtemp;
 }
 
 function add(var x,var y) {
   return(x+y);
+}
+
+function click(var x){
+  numtemp += x.toString();
+}
+
+function plusbutt(){
+  product = add(numtemp.toInt(),product);
+  display(product);
+}
+
+display(var x){
+  screen.innerHTML = x;
 }
