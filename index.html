@@ -2,7 +2,10 @@
 
 <html>
   <head>
-   </head>
+    
+    
+    
+  </head>
   
   <body>
     
@@ -13,14 +16,14 @@
         
         <tr>
           <td>
-            <input type=text name=display id=display disabled>
+            <input type=text name=display id=screen disabled>
           </td> 
         </tr>
           <tr>
-              <td> <input type=button name=one value=1 onclick=””> </td>
-              <td> <input type=button name=two value=2 onclick=””> </td>
-              <td> <input type=button name=three value=3 onclick=””> </td>
-              <td> <input type=button class=operator name=plus value=+ onclick=””> </td>
+              <td id=one> <input type=button name=one value=1 onclick=”click(1);”> </td>
+              <td id=two> <input type=button name=two value=2 onclick=”click(2);”> </td>
+              <td id=three> <input type=button name=three value=3 onclick=”click(3);”> </td>
+              <td id=plus> <input type=button class=operator name=plus value=+ onclick=”plusbutt();”> </td>
         </tr>
         
       </table> 
