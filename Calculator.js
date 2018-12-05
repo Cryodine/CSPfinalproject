@@ -17,7 +17,7 @@
   }
   
   var product = 0;
-  var numtemp = 0;
+  var numtemp = "";
 
 function add(x,y) {
   return(x+y);
