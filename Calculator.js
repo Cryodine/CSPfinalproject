@@ -16,7 +16,7 @@
     return(document.getElementById("screen"));
   }
   
-  var product = 12;
+  var product = 0;
   var numtemp = 0;
 
 function add(x,y) {
