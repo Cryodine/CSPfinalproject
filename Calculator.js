@@ -20,11 +20,11 @@ function init() {
   var numtemp;
 }
 
-function add(var x,var y) {
+function add( x, y) {
   return(x+y);
 }
 
-function click(var x){
+function click( x){
   numtemp += x.toString();
 }
 
@@ -33,6 +33,6 @@ function plusbutt(){
   display(product);
 }
 
-display(var x){
+display( x){
   screen.value = x;
 }
