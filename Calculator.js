@@ -1,4 +1,3 @@
-function init() {
   
   var zero = document.getElementById("zero");
   var one = document.getElementById("one");
@@ -18,7 +17,6 @@ function init() {
   
   var product = 0;
   var numtemp = 0;
-}
 
 function add(x,y) {
   return(x+y);
