@@ -25,13 +25,12 @@ function add(x,y) {
 
 function butt(x){
   numtemp += x.toString();
-  console.log(x);
-  console.log("button");
+  display(numtemp);
 }
 
 function plusbutt(){
   product = add(parseInt(numtemp,10),product);
-  console.log(product);
+  numtemp = "";
   display(product);
 }
 
