@@ -27,7 +27,7 @@ function click( x){
 }
 
 function plusbutt(){
-  product = add(numtemp.toInt(),product);
+  product = add(parseInt(numtemp,10),product);
   display(product);
 }
 
