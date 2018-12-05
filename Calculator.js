@@ -16,11 +16,11 @@ function init() {
   
   var screen = document.getElementById("screen");
   
-  var product;
-  var numtemp;
+  var product = 0;
+  var numtemp = 0;
 }
 
-function add( x, y) {
+function add(x,y) {
   return(x+y);
 }
 
@@ -33,6 +33,6 @@ function plusbutt(){
   display(product);
 }
 
-function display( x){
+function display(x){
   screen.value = x;
 }
