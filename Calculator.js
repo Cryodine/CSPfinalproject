@@ -23,7 +23,7 @@ function add(x,y) {
   return(x+y);
 }
 
-function click(x){
+function butt(x){
   numtemp += x.toString();
   console.log(x);
   console.log("button");
