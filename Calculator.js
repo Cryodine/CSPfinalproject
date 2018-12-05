@@ -33,6 +33,6 @@ function plusbutt(){
   display(product);
 }
 
-display( x){
+function display( x){
   screen.value = x;
 }
