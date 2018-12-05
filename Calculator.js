@@ -29,6 +29,7 @@ function click( x){
 function plusbutt(){
   product = add(parseInt(numtemp,10),product);
   display(product);
+  console.log(product);
 }
 
 function display(x){
