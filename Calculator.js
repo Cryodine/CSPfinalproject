@@ -12,19 +12,21 @@
   
   var plus = document.getElementById("plus");
   var equals = document.getElementById("equals");
+  function screen(){
+    return(document.getElementById("screen"));
+  }
   
-  var screen = document.getElementById("screen");
-  
-  var product = 0;
+  var product = 12;
   var numtemp = 0;
 
 function add(x,y) {
   return(x+y);
 }
 
-function click( x){
+function click(x){
   numtemp += x.toString();
   console.log(x);
+  console.log("button");
 }
 
 function plusbutt(){
@@ -34,5 +36,5 @@ function plusbutt(){
 }
 
 function display(x){
-  screen.innerHTML = x;
+  screen().innerHTML = x;
 }
