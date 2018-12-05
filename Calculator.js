@@ -32,5 +32,5 @@ function plusbutt(){
 }
 
 function display(x){
-  screen.value = x;
+  screen.innerHTML = x;
 }
