@@ -23,6 +23,9 @@ var lastop = "null";
 function add(x,y) {
   return(x+y);
 }
+function mul(x,y) {
+  return(x*y);
+}
 
 function butt(x){
   numtemp += x.toString();
@@ -36,15 +39,34 @@ function plusbutt(){
   lastop = "add";
 }
 
+function mulbutt(){
+  product = mul(parseInt(numtemp,10),product);
+  numtemp = "";
+  display(product);
+  lastop = "mul";
+}
+
 function eqlbutt(){
   if(lastop == "add"){
      product = add(parseInt(numtemp,10),product);
      numtemp = "";
      display(product);
      lastop = "null";
-     }else if(lastop == "null"){
-     }
+   }else if(lastop = "mul"){
+     product = mul(parseInt(numtemp,10),product);
+      numtemp = "";
+      display(product);
+     lastop = "null";
+   }else if(lastop == "null"){
+   }
   product = 0;
+}
+
+function cebutt(){
+  display(0);
+  product = 0;
+  numtemp = "";
+  lastop = "null";
 }
 
 function display(x){
