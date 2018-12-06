@@ -43,7 +43,6 @@ function eqlbutt(){
      display(product);
      lastop = "null";
      }else if(lastop == "null"){
-       break;
      }
 }
 
