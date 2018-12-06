@@ -18,6 +18,7 @@
   
   var product = 0;
   var numtemp = "";
+var firstnum = 0;
 var lastop = "null";
 
 function add(x,y) {
@@ -33,20 +34,22 @@ function butt(x){
 }
 
 function plusbutt(){
+  firstnum = parseInt(numtemp,10)
   numtemp = "";
   lastop = "add";
 }
 
 function mulbutt(){
+  firstnum = parseInt(numtemp,10)
   numtemp = "";
   lastop = "mul";
 }
 
 function eqlbutt(){
   if(lastop == "add"){
-     product = add(parseInt(numtemp,10),onscreen());
+     product = add(numtemp,onscreen());
      }else if(lastop == "mul"){
-     product = mul(parseInt(numtemp,10),onscreen());
+     product = mul(pnumtemp,onscreen());
      }
   display(product);
   product = 0;
@@ -64,5 +67,5 @@ function display(x){
 }
 
 function onscreen(){
-  return(screen().innerHTML);
+  return(parseInt(screen().innerHTML,10));
 }
