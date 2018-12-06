@@ -33,20 +33,21 @@ function butt(x){
 }
 
 function plusbutt(){
-  product = add(parseInt(numtemp,10),onscreen());
   numtemp = "";
-  display(product);
   lastop = "add";
 }
 
 function mulbutt(){
-  product = mul(parseInt(numtemp,10),onscreen());
   numtemp = "";
-  display(product);
   lastop = "mul";
 }
 
 function eqlbutt(){
+  if(lastop == "add"){
+     product = add(parseInt(numtemp,10),onscreen());
+     }else if(lastop == "mul"){
+     product = mul(parseInt(numtemp,10),onscreen());
+     }
   display(product);
   product = 0;
 }
