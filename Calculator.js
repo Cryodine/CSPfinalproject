@@ -16,9 +16,10 @@
     return(document.getElementById("screen"));
   }
   
-  var product = 0;
+   var product = 0;
   var numtemp = "";
 var firstnum = 0;
+var onscreen = "";
 var lastop = "null";
 
 function add(x,y) {
@@ -31,28 +32,31 @@ function mul(x,y) {
 function butt(x){
   numtemp += x.toString();
   display(numtemp);
+  onscreen = numtemp;
 }
 
 function plusbutt(){
-  firstnum = parseInt(numtemp,10)
+  firstnum = parseInt(numtemp,10);
   numtemp = "";
   lastop = "add";
 }
 
 function mulbutt(){
-  firstnum = parseInt(numtemp,10)
+  firstnum = parseInt(numtemp,10);
   numtemp = "";
   lastop = "mul";
 }
 
 function eqlbutt(){
   if(lastop == "add"){
-     product = add(numtemp,onscreen());
+     product = add(firstnum,parseInt(onscreen,10));
      }else if(lastop == "mul"){
-     product = mul(pnumtemp,onscreen());
+     product = mul(firstnum,parseInt(onscreen,10));
      }
   display(product);
   product = 0;
+  lastop = "null";
+  firstnum = 0;
 }
 
 function cebutt(){
@@ -60,12 +64,10 @@ function cebutt(){
   product = 0;
   numtemp = "";
   lastop = "null";
+  firstnum = 0;
 }
 
 function display(x){
   screen().innerHTML = x;
 }
 
-function onscreen(){
-  return(parseInt(screen().innerHTML,10));
-}
