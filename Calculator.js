@@ -44,6 +44,7 @@ function eqlbutt(){
      lastop = "null";
      }else if(lastop == "null"){
      }
+  product = 0;
 }
 
 function display(x){
