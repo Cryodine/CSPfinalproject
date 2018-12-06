@@ -18,6 +18,7 @@
   
   var product = 0;
   var numtemp = "";
+var lastop = "null";
 
 function add(x,y) {
   return(x+y);
@@ -32,6 +33,18 @@ function plusbutt(){
   product = add(parseInt(numtemp,10),product);
   numtemp = "";
   display(product);
+  lastop = "add";
+}
+
+function eqlbutt(){
+  if(lastop == "add"){
+     product = add(parseInt(numtemp,10),product);
+     numtemp = "";
+     display(product);
+     lastop = "null";
+     }else if(lastop == "null"){
+       break;
+     }
 }
 
 function display(x){
