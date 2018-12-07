@@ -28,6 +28,12 @@ function add(x,y) {
 function mul(x,y) {
   return(x*y);
 }
+function div(x,y) {
+  return(x/y);
+}
+function subtract(x,y) {
+  return(x-y);
+}
 
 function butt(x){
   numtemp += x.toString();
@@ -46,12 +52,25 @@ function mulbutt(){
   numtemp = "";
   lastop = "mul";
 }
-
+function minbutt(){
+  firstnum = parseInt(numtemp,10);
+  numtemp = "";
+  lastop = "min";
+}
+function divbutt(){
+  firstnum = parseInt(numtemp,10);
+  numtemp = "";
+  lastop = "div";
+}
 function eqlbutt(){
   if(lastop == "add"){
      product = add(firstnum,parseInt(onscreen,10));
      }else if(lastop == "mul"){
      product = mul(firstnum,parseInt(onscreen,10));
+     }else if(lastop == "min"){
+     product = subtract(firstnum,parseInt(onscreen,10));
+     }else if(lastop == "div"){
+     product = div(firstnum,parseInt(onscreen,10));
      }
   display(product);
   product = 0;
