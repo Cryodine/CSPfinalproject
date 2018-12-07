@@ -9,6 +9,30 @@
   
   <body>
      
+    <style>
+      .numbutt {
+      display: inline-block;
+      padding: 15px 15px;
+      font-size: 5px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 0 9px #999;
+    }
+
+    .numbutt:hover {background-color: #3e8e41}
+
+    .numbutt:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+   </style>
     
       <table>
         
@@ -19,29 +43,29 @@
         </tr>
         <br>
         <tr>
-            <td id="one"> <button onclick="butt(1)">1</button> </td>
-            <td id="two"> <button onclick="butt(2)">2</button> </td>
-            <td id="three"> <button onclick="butt(3)">3</button> </td>
-            <td id="plus"> <button onclick="plusbutt()">+</button> </td>
+            <td id="one"> <button class = "numbutt" onclick="butt(1)">1</button> </td>
+            <td id="two"> <button class = "numbutt" onclick="butt(2)">2</button> </td>
+            <td id="three"> <button class = "numbutt" onclick="butt(3)">3</button> </td>
+            <td id="plus"> <button class = "numbutt" onclick="plusbutt()">+</button> </td>
         </tr>
         <tr>
-            <td id="four"> <button onclick="butt(4)">4</button> </td>
-            <td id="five"> <button onclick="butt(5)">5</button> </td>
-            <td id="six"> <button onclick="butt(6)">6</button> </td>
-            <td id="plus"> <button onclick="mulbutt()">x</button> </td>
+            <td id="four"> <button class = "numbutt" onclick="butt(4)">4</button> </td>
+            <td id="five"> <button class = "numbutt" onclick="butt(5)">5</button> </td>
+            <td id="six"> <button class = "numbutt" onclick="butt(6)">6</button> </td>
+            <td id="plus"> <button class = "numbutt" onclick="mulbutt()">x</button> </td>
         </tr>
         <tr>
-            <td id="seven"> <button onclick="butt(7)">7</button> </td>
-            <td id="eight"> <button onclick="butt(8)">8</button> </td>
-            <td id="nine"> <button onclick="butt(9)">9</button> </td>
-          <td id="minus"> <button onclick="minbutt()">-</button> </td>
+            <td id="seven"> <button class = "numbutt" onclick="butt(7)">7</button> </td>
+            <td id="eight"> <button class = "numbutt" onclick="butt(8)">8</button> </td>
+            <td id="nine"> <button class = "numbutt" onclick="butt(9)">9</button> </td>
+          <td id="minus"> <button class = "numbutt" onclick="minbutt()">-</button> </td>
             
         </tr>
         <tr>
-          <td id="ce"> <button onclick="cebutt()">CE</button> </td>
-          <td id="zero"> <button onclick="butt(0)">0</button> </td>
-          <td id="eql"> <button onclick="eqlbutt()">=</button> </td>
-          <td id="devide"> <button onclick="divbutt()">/</button> </td>
+          <td id="ce"> <button class = "numbutt" onclick="cebutt()">CE</button> </td>
+          <td id="zero"> <button class = "numbutt" onclick="butt(0)">0</button> </td>
+          <td id="eql"> <button class = "numbutt" onclick="eqlbutt()">=</button> </td>
+          <td id="devide"> <button class = "numbutt" onclick="divbutt()">/</button> </td>
         </tr>
         
       </table> 
